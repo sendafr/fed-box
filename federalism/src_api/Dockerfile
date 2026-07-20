@@ -15,11 +15,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies (Ensure gunicorn is in requirements.txt!)
-COPY requirements.txt .
+COPY federalism/src_api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project files
-COPY . .
+COPY federalism/src_api/. .
 
 # Expose port
 EXPOSE 8000
