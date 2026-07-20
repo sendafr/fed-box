@@ -162,7 +162,7 @@ INSTALLED_APPS = [
     "whitenoise",
     'storages',
     #'storages.backend.s3boto3',
-    'celery',  
+    #'celery',  
 
 ]
 
