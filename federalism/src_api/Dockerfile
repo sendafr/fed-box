@@ -28,4 +28,4 @@ EXPOSE 8000
 # 1. Run Migrations
 # 2. Collect Static Files
 # 3. Start Gunicorn with thread workers for fed_api
-CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn --bind 0.0.0.0:8000 --workers 2 --worker-class thread fed_api.wsgi:application"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn --bind 0.0.0.0:8000 --workers 2 --worker-class gthread fed_api.wsgi:application"]

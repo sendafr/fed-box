@@ -132,8 +132,7 @@ def serve_media_file(request, file_path):
     response['Content-Length'] = str(file_size)
     return response
 
-"""
-"""@csrf_exempt
+@csrf_exempt
 def serve_media_file(request, file_path):
     file_path = file_path.lstrip('/')
     full_path = os.path.join(settings.MEDIA_ROOT, file_path)
@@ -171,9 +170,8 @@ def serve_media_file(request, file_path):
     response['Content-Length'] = str(file_size)
     response['Cache-Control'] = 'public, max-age=86400'
     return response
-"""
 
-"""@csrf_exempt  # Allow unauthenticated access
+@csrf_exempt  # Allow unauthenticated access
 def serve_media_file(request, file_path):
     
     #Serve media files publicly without authentication.
