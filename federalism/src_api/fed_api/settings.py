@@ -100,7 +100,7 @@ else:
 # 2. Add your Vercel production URL here
 # Replace 'https://your-vercel-app.vercel.app' with your actual Vercel URL
 CSRF_TRUSTED_ORIGINS = [
-    'https://fed-koyeb.vercel.app', 
+    'https://fed-box-dun.vercel.app', 
     'https://fed-educ-jxwtbwqee-sendawula-freds-projects.vercel.app/'
     'https://fed-educ-2o2zlqosy-sendawula-freds-projects.vercel.app',
     'https://qualified-pelican-fed-devo-5c8e5770.koyeb.app/'
@@ -111,7 +111,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # 3. Ensure CORS is configured (if using django-cors-headers)
 CORS_ALLOWED_ORIGINS = [
-    'https://fed-koyeb.vercel.app',
+    'https://fed-box-dun.vercel.app',
     'http://localhost:3000',
     'http://localhost:5173'
 ]
