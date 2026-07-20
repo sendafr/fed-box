@@ -22,7 +22,7 @@ import boto3
 from botocore.client import Config
 from django.views.decorators.http import require_GET
 #Create a Public Media View in Django
-from .tasks import process_media_task  # Adjust path if your tasks.py is in a different app
+#from .tasks import process_media_task  # Adjust path if your tasks.py is in a different app
         
 from django.http import FileResponse, HttpResponse
 from django.views.decorators.http import condition
