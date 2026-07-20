@@ -237,7 +237,7 @@ def serve_media_file(request, file_path):
 
  
 
-# ───"" MediaUpload CRUD ──────────────────────────────────────────────────────────
+"""# ───"" MediaUpload CRUD ──────────────────────────────────────────────────────────
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def media_upload_list_create(request):
@@ -278,7 +278,7 @@ def media_upload_list_create(request):
             }, status=status.HTTP_201_CREATED)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+"""
 
 
 from rest_framework.decorators import api_view
@@ -329,7 +329,7 @@ def media_progress(request, task_id):
 
 
 
-"""
+
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def media_upload_list_create(request):
@@ -355,7 +355,7 @@ def media_upload_list_create(request):
                 'data': serializer.data
             }, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-"""
+
 
 @api_view(['GET', 'PUT', 'PATCH', 'DELETE'])
 @permission_classes([IsAuthenticated])
