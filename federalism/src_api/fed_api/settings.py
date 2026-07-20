@@ -243,8 +243,8 @@ if IS_PRODUCTION:
             'NAME': os.environ.get('SUPABASE_DB_NAME', 'postgres'),
             'USER': os.environ.get('SUPABASE_DB_USER', 'postgres'),
             'PASSWORD': os.environ.get('SUPABASE_DB_PASSWORD'),
-            'HOST': os.environ.get('SUPABASE_DB_HOST', 'db.federalism-media.supabase.co'),
-            'PORT': os.environ.get('SUPABASE_DB_PORT', '5432'),
+            'HOST': os.environ.get('SUPABASE_DB_HOST', 'aws-c-eu-west-1.pooler.supabase.com'),
+            'PORT': os.environ.get('SUPABASE_DB_PORT', '6543'),
         }
     }
 else:

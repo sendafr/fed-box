@@ -28,7 +28,6 @@ from django.http import FileResponse, HttpResponse
 from django.views.decorators.http import condition
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_exempt
-#from celery.result import AsyncResult
 from django.conf import settings
 import os
 import mimetypes, re
