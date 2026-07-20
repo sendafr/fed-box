@@ -45,5 +45,5 @@ urlpatterns = [
     path('media_download/', views.media_download_list_create, name='media_download_list_create'),
     path('media_download/<int:pk>/', views.media_download_detail, name='media_download_detail'),
     path('serve_media_file/<path:file_path>', views.serve_media_file, name='serve_media_file'),
-    path('progress/<str:task_id>/', views.media_progress, name='media-progress'),
+    #path('progress/<str:task_id>/', views.media_progress, name='media-progress'),
 ]

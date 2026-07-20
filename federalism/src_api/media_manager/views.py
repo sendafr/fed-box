@@ -28,7 +28,7 @@ from django.http import FileResponse, HttpResponse
 from django.views.decorators.http import condition
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_exempt
-from celery.result import AsyncResult
+#from celery.result import AsyncResult
 from django.conf import settings
 import os
 import mimetypes, re
@@ -283,8 +283,8 @@ def media_upload_list_create(request):
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from celery.result import AsyncResult
-
+#from celery.result import AsyncResult
+"""
 @api_view(['GET'])
 def media_progress(request, task_id):
     task = AsyncResult(task_id)
@@ -308,7 +308,7 @@ def media_progress(request, task_id):
             'status': task.info.get('status', 'Failed')
         }, status=500)
 
-
+"""
 
 """@api_view(['GET'])
 @permission_classes([AllowAny])
